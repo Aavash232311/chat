@@ -132,9 +132,11 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000", "https://infinite-falls-73478.herokuapp.com"
+    "http://localhost:3000", "https://infinite-falls-73478.herokuapp.com",
+    "https://a2f4-2404-7c00-43-f5f4-f528-fa94-b30b-3fee.in.ngrok.io"
 ]
 
 import dj_database_url
+
 prob_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prob_db)
