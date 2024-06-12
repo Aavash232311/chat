@@ -11,7 +11,7 @@ disconnect = {
     'status': 'alert',
 }
 
-
+# not exactly fissible but i wrote it because i was bored since we havent used database and the data is stored in server's ram which is very costly ofcurse
 class Connection(WebsocketConsumer):
 
     def __init__(self, *args, **kwargs):
